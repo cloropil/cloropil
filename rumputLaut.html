@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es Rumput Laut Buk Ida</title>
+    <style>
+        @keyframes floatAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    
+        @keyframes slideAnimationLeft {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-10px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    
+        @keyframes slideAnimationRight {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cfe6d3; /* Warna latar belakang yang terinspirasi dari rumput laut */
+        }
+    
+        header {
+            background-color: #88b04b; /* Warna hijau yang terinspirasi dari warna rumput laut */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: floatAnimation 3s infinite alternate; /* Animasi untuk memberi kesan bergerak seperti rumput laut */
+        }
+    
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+    
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* Warna teks yang kontras agar terlihat jelas */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+    
+        nav ul li a:hover {
+            color: #ff6600; /* Warna saat tautan navigasi dihover, memberikan efek yang menarik */
+        }
+    
+        section {
+            padding: 50px;
+        }
+    
+        section h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 32px;
+             /* Animasi untuk judul yang memberi kesan bergerak seperti rumput laut */
+        }
+    
+        .produk-container {
+            display: flex; /* Mengatur elemen-elemen anak menjadi baris */
+            overflow-x: hidden; /* Menyembunyikan scrollbar horizontal */
+            margin-bottom: 40px;
+        }
+    
+        .produk {
+            width: 300px;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #fff;
+            animation: slideProduct 21s infinite; /* Animasi untuk geser otomatis */
+        }
+    
+        .produk:last-child {
+            margin-right: 0; /* Hapus margin kanan dari elemen terakhir */
+        }
+    
+        @keyframes slideProduct {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            20% {
+                transform: translateX(-100%); /* Geser ke kiri sampai sejauh ukuran produk */
+            }
+            30% {
+                transform: translateX(-200%); /* Geser ke kiri sampai sejauh dua kali ukuran produk */
+            }
+            50% {
+                transform: translateX(-200%); /* Jeda selama beberapa detik */
+            }
+            70% {
+                transform: translateX(-200%); /* Geser ke kiri sampai sejauh dua kali ukuran produk */
+            }
+            80% {
+                transform: translateX(-100%); /* Geser ke kiri sampai sejauh ukuran produk */
+            }
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    
+    
+        
+</head>
+<body>
+    <header>
+        <h1>Es Rumput Laut Buk Ida</h1>
+        <nav>
+            <ul>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tentang">
+        <h2>Tentang Kami</h2>
+        <p>Deskripsi singkat tentang Es Rumput Laut Buk Ida.</p>
+    </section>
+
+    <section id="produk">
+        <h2>Produk Kami</h2>
+        <div class="produk-container">
+            <div class="produk">
+                <img src="gambar/kolkolk2.jpg " alt="Es Rumput Laut">
+                <h3>Es Rumput Laut</h3>
+                <p>Deskripsi produk Es Rumput Laut.</p>
+            </div>
+            <div class="produk">
+                <img src="gambar/kolkolk2.jpg " alt="Produk 2">
+                <h3>Produk 2</h3>
+                <p>Deskripsi produk 2.</p>
+            </div>
+            <div class="produk">
+                <img src="gambar/kolkolk2.jpg" alt="Produk 3">
+                <h3>Produk 3</h3>
+                <p>Deskripsi produk 3.</p>
+            </div>
+            <div class="produk">
+                <img src="gambar/kolkolk2.jpg" alt="Produk 3">
+                <h3>Produk 3</h3>
+                <p>Deskripsi produk 3.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>Silakan hubungi kami untuk informasi lebih lanjut:</p>
+        <address>
+            Alamat: Jalan Contoh No. 123, Kota Anda<br>
+            Telepon: 081234567890<br>
+            Email: info@esrumputlautbukida.com
+        </address>
+    </section>
+
+    <footer>
+        <p>Hak Cipta © 2024 Es Rumput Laut Buk Ida. Hak Cipta Dilindungi Undang-Undang.</p>
+    </footer>
+</body>
+</html>
